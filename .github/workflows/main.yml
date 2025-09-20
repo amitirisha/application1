@@ -45,6 +45,8 @@ jobs:
         run : docker images
 
       - name: dockerhub par pushkarna
-        run: docker push elearn-frontend:v5   
+        run: |
+          docker tag elearn-frontend:v5 amitirisha/elearnforntend
+          docker push amitirisha/elearn-frontend:v5   
       
   

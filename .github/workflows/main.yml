@@ -19,10 +19,15 @@ jobs:
         run: |
           ls -al
 
-      - name: Run a multiple line script
-        run: |
-          echo helloji1
-          echo helloji2
+      - name: check java version
+        run: java -version
+
+      - name: npm ko install karna
+        run: npm install
+
+      - name: npm build karna
+        run: npm run build   
+          
          
       
   

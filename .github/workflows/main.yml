@@ -32,7 +32,9 @@ jobs:
         run: |
           docker -v
           docker  
-          
+          docker images -a
+      - name: docker build karna
+        run: docker build -t elearn-frontend:v5    
          
       
   

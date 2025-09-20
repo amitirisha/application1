@@ -38,7 +38,8 @@ jobs:
           docker build -t elearn-frontend:v5 .   
           docker images -a
          
-      - name: dockerhub login
-        run : docker login -u {{ secrets.dockerhubusername }} -p {{ secrets.dockerhubpassword }}
+      - name: DockerHub login
+        run: echo "${{ secrets.dockerhubpassword }}" | docker login -u "${{ secrets.dockerhubusername }}" --password-stdin
+
       
   

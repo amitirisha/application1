@@ -27,6 +27,11 @@ jobs:
 
       - name: npm build karna
         run: CI=false npm run build  
+
+      - name: docker check karna hai
+        run: |
+          docker -v
+          docker  
           
          
       

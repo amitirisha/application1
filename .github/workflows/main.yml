@@ -43,5 +43,8 @@ jobs:
       
       - name: docker image check karna
         run : docker images
+
+      - name: dockerhub par pushkarna
+        run: docker push elearn-frontend:v5   
       
   

@@ -40,6 +40,8 @@ jobs:
          
       - name: DockerHub login
         run: echo "${{ secrets.dockerhubpassword }}" | docker login -u "${{ secrets.dockerhubusername }}" --password-stdin
-
+      
+      - name: docker image check karna
+        run : docker images
       
   

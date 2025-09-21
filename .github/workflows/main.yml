@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5.0.0
+      - name: az login check
+        run: |
+          az account show 
+          az group list  
       
       - name: Run a single line script
         run: echo Hello,world!
@@ -48,5 +52,7 @@ jobs:
         run: |
           docker tag elearn-frontend:v5 amitirisha/elearn-frontend
           docker push amitirisha/elearn-frontend  
+
+      
       
   

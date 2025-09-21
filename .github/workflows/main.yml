@@ -26,7 +26,6 @@ jobs:
           az group list  
       
       - name: Run a single line script
-        if: always()
         run: echo Hello,world!
 
       - name: custom script

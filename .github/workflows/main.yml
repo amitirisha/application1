@@ -33,10 +33,10 @@ jobs:
           resource-group: amit-rg  
 
       - run: |
-          kubectl create namespace gitrg2
+          kubectl create namespace gitrg3
 
       - run: |
-          kubectl apply -f pod.yaml    
+          kubectl apply -f src/pod.yaml    
 
   
       - name: Run a single line script

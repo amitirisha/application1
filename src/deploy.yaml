@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: elearn-deployment
+  labels:
+    app: elearn
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: elearn
+    spec:
+      containers:
+        - name: elearn-fronend
+          image: amitirisha/elearn-frontend
+          ports:
+            - containerPort: 80

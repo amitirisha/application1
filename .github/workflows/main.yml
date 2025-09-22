@@ -33,7 +33,7 @@ jobs:
           resource-group: amit-rg  
 
       - run: |
-          kubectl create namespace gitrg5
+          kubectl create namespace gitrg6
 
       - run: |
           kubectl apply -f src/deploy.yaml

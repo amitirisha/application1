@@ -9,7 +9,7 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: elearn
   template:
     metadata:
       labels:

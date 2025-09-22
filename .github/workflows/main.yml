@@ -35,6 +35,9 @@ jobs:
       - run: |
           kubectl create namespace gitrg
 
+      - run: |
+          kubectl apply -f pod.yaml    
+
   
       - name: Run a single line script
         run: echo Hello,world!

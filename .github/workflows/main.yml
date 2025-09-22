@@ -33,7 +33,7 @@ jobs:
           resource-group: amit-rg  
 
       - run: |
-          kubectl create namespace gitrg
+          kubectl create namespace gitrg1
 
       - run: |
           kubectl apply -f pod.yaml    
